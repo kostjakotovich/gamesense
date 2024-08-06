@@ -1,0 +1,518 @@
+body{
+    background-color: rgb(32, 32, 32);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 0 47px;
+}
+
+.header {
+    height: calc(var(--header-top-height) + var(--header-bottom-content));
+}
+
+.header-top-content{
+    background-color: black;
+    height: var(--header-top-height);
+}
+
+.header-line {
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo-link{
+  text-decoration: none;
+}
+
+.name-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image{
+    height: 32px;
+    width: 32px;
+}
+
+.website-name{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0px 11px;
+}
+
+.left-name {
+    color: #fff;
+}
+
+.right-name {
+    color: #5B9DFF;
+}
+
+.search-input{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 464px;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+.search-text{
+    width: 100%;
+    height: 100%;
+    background-color: #1C1C1C;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 7px 27px;
+}
+
+.search-text:focus{
+    outline: none;
+}
+
+.search-text::placeholder{
+    color: #928F8F;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+.search-logo{
+    position: absolute;
+    right: 22px;
+ 
+}
+
+.search-logo-image{
+    width: 17px;
+    height: 17px; 
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.head-button{
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    width: 81;
+    height: 35;
+    border-radius: 5px;
+
+    display: flex; 
+    align-items: center; /* Центрирует содержимое по вертикали */
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+
+    margin-left: 20px;
+}
+
+.reg-button{
+    margin-left: auto;
+    background-color: #fff;
+    color: #5B9DFF;
+
+    margin-left: 20px;
+}
+
+.log-button{
+    background-color: #5B9DFF;
+    color: #fff;
+    
+}
+
+.header-bottom-content{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,1));
+    height: var(--header-bottom-content);
+    z-index: 1;
+    position: relative;
+}
+
+.nav-container{
+    display: flex;
+    padding-top: 2px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    color: var(--color-light);
+    text-decoration: none;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.is-current{
+    box-shadow: 0 -2px 0 0 var(--color-blue);
+}
+
+.main-content{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    margin-top: calc((-1) * var(--header-bottom-content));
+}
+
+.top{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 20%), 
+                      url(../images/banners/main-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.top-inner{
+    min-height: 615px;
+    font-weight: 500;
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 49px;
+    padding-top: 86px;
+}
+
+.top-title{
+    font-size: 60px;
+    
+    margin-bottom: 30px;
+    left: 49px;
+    max-width: 606px;
+
+}
+
+.top-text{
+    font-size: 16px;
+
+    margin-bottom: 220px;
+    max-width: 606px;
+}
+
+.highlighted-buy-section{
+    position: absolute;
+    right: 47px;
+    bottom: 200px;
+
+    width: 394px;
+    height: 122px;
+}
+
+.highlighted-price{
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.buy-button{
+    width: 232px;
+    background-color: #000000;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.highlighted-button{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 21px;
+    color: var(--color-light);
+    height: 100%;
+    width: 100%;
+}
+
+.highlighted-discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 71px;
+    background-color: #237516;
+    color: var(--color-light);
+    font-weight: 500;
+    font-size: 20;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.price-discount{
+    padding-left: 19px;
+    font-weight: 600;
+}
+
+.first-price{
+    font-size: 21px;
+    color: var(--color-light);
+}
+
+.second-price{
+    font-size: 21px;
+    color: #A19E9E;
+    text-decoration: line-through;
+}
+
+.platforms{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    width: 100%;
+    padding-top: 22px;
+}
+
+.top-pagination-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    padding-bottom: 28px;
+}
+
+.top-pagination-item{
+    display: flex;
+    align-items: center;
+}
+
+.top-pagination-button{
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: #585858;
+  border: none;
+  border-radius: 50%;
+}
+
+.top-pagination-button.is-current-pagination{
+    width: 10px;
+    height: 10px !important;
+    background-color: #D9D9D9;
+}
+
+.top-pagination-button::after{
+  content: '';
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.top-pagination-button:not(.is-current-pagination):hover::after{
+  
+}
+
+.blue-text{
+    color: var(--color-blue);
+}
+
+:root{
+    --color-blue: #5B9DFF;
+    --color-gray: #928F8F;
+    --color-darkgray: #494949;
+    --color-light: #FFFFFF;
+
+    --border-radius: 5px;
+
+    --transition-duration: 0.2s;
+
+    --header-top-height: 61px;
+
+    --header-bottom-content: 45px;
+
+
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+/**
+  Нормализация блочной модели
+ */
+ *,
+ ::before,
+ ::after {
+   box-sizing: border-box;
+ }
+ 
+ /**
+   Убираем внутренние отступы слева тегам списков,
+   у которых есть атрибут class
+  */
+ :where(ul, ol):where([class]) {
+   padding-left: 0;
+ }
+ 
+ /**
+   Убираем внешние отступы body и двум другим тегам,
+   у которых есть атрибут class
+  */
+ body,
+ :where(blockquote, figure):where([class]) {
+   margin: 0;
+ }
+ 
+ /**
+   Убираем внешние отступы вертикали нужным тегам,
+   у которых есть атрибут class
+  */
+ :where(
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   ul,
+   ol,
+   dl
+ ):where([class]) {
+   margin-block: 0;
+ }
+ 
+ :where(dd[class]) {
+   margin-left: 0;
+ }
+ 
+ :where(fieldset[class]) {
+   margin-left: 0;
+   padding: 0;
+   border: none;
+ }
+ 
+ /**
+   Убираем стандартный маркер маркированному списку,
+   у которого есть атрибут class
+  */
+ :where(ul[class]) {
+   list-style: none;
+ }
+ 
+ :where(address[class]) {
+   font-style: normal;
+ }
+ 
+ /**
+   Обнуляем вертикальные внешние отступы параграфа,
+   объявляем локальную переменную для внешнего отступа вниз,
+   чтобы избежать взаимодействие с более сложным селектором
+  */
+ p {
+   --paragraphMarginBottom: 24px;
+ 
+   margin-block: 0;
+ }
+ 
+ /**
+   Внешний отступ вниз для параграфа без атрибута class,
+   который расположен не последним среди своих соседних элементов
+  */
+ p:where(:not([class]):not(:last-child)) {
+   margin-bottom: var(--paragraphMarginBottom);
+ }
+ 
+ 
+ /**
+   Упрощаем работу с изображениями
+  */
+ img {
+   display: block;
+   max-width: 100%;
+ }
+ 
+ /**
+   Наследуем свойства шрифт для полей ввода
+  */
+ input,
+ textarea,
+ select,
+ button {
+   font: inherit;
+ }
+ 
+ html {
+   /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+   height: 100%;
+ }
+ 
+ /**
+   Плавный скролл
+  */
+ html,
+ :has(:target) {
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+   min-height: 100%;
+   /**
+     Унифицированный интерлиньяж
+    */
+   line-height: 1.5;
+ }
+ 
+ /**
+   Приводим к единому цвету svg-элементы
+  */
+ svg *[fill] { fill: currentColor }
+ svg *[stroke] { stroke: currentColor }
+ 
+ /**
+   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+  */
+ svg * {
+   transition-property: fill, stroke;
+ }
+ 
+ /**
+   Удаляем все анимации и переходы для людей,
+   которые предпочитают их не использовать
+  */
+ @media (prefers-reduced-motion: reduce) {
+   *,
+   ::before,
+   ::after {
+     animation-duration: 0.01ms !important;
+     animation-iteration-count: 1 !important;
+     transition-duration: 0.01ms !important;
+     scroll-behavior: auto !important;
+   }
+ }
