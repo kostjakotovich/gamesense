@@ -1,0 +1,252 @@
+.cart-modal{
+    position: absolute;
+    z-index: 10;
+    width: 349px;
+    top: 47px;
+    right: 6px;
+    
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;    
+}
+
+.cart-container{
+    border: solid 1px var(--color-blue);
+    border-radius: var(--border-radius);
+    background-color: #000000;
+}
+
+.cart-inner-top{
+    border-bottom: solid 1px #0C0C0C;
+}
+
+.cart-top{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 16;
+    font-weight: 600;
+    color: var(--color-light);
+    padding: 20px 20px 12px;
+}
+
+.close-cart{
+    display: flex;
+    align-items: center;
+}
+
+.close-cart-img{
+    width: 17px;
+    aspect-ratio: 1;
+}
+
+.cart-content-inner{
+    display: flex;
+    padding: 19px 39px 19px 17px;
+    border-bottom: 1px solid #0C0C0C;
+}
+
+.cart-content-left{
+    width: 49px;
+    height: 65px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.cart-game-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.cart-content-right{
+    width: 236px;
+}
+
+.content-inner-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-game-title{
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--color-light);
+}
+
+.cart-trashcan{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-trashcan-img{
+    width: 14px;
+    aspect-ratio: 1;
+}
+
+.content-inner-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+}
+
+.cart-game-qnt{
+    display: flex;
+    gap: 0 11px;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--color-light);
+}
+
+.quantity-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light);
+}
+
+.quantity-btn.disabled{
+    color: #626262;
+    pointer-events: none;
+}
+
+.cart-game-price{
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--color-light);
+}
+
+.cart-empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 37px;
+}
+
+.cart-empty-img{
+    width: 61px;
+    height: 57px;
+}
+
+.empty-title{
+    display: flex;
+    text-align: center;
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 12px;
+}
+
+.empty-text{
+    display: flex;
+    text-align: center;
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 10px;
+    padding: 20px 60px 0px 60px;
+}
+
+.shopping-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: var(--color-blue);
+    color: var(--color-light);
+    width: 147px;
+    height: 29px;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.cart-content-bottom{
+    padding: 16px 20px;
+}
+
+.total-cart-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-cart-price-text, .total-cart-price-number{
+    color: var(--color-light);
+}
+
+.total-cart-price-text{
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.total-cart-price-number{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.bottom-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    gap: 6px 0px;
+
+    padding-top: 15px;
+}
+
+.view-cart, .checkout-now{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 31px;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.view-cart{
+    color: var(--color-light);
+    background-color: var(--color-blue);
+}
+
+.checkout-now{
+    color: var(--color-blue);
+    background-color: var(--color-light);
+}
+
+
+
+
+
+
+
+
+
+:root{
+    --color-blue: #5b9dff;
+    --color-gray: #928F8F;
+    --color-darkgray: #494949;
+    --color-light: #FFFFFF;
+
+    --border-radius: 5px;
+
+    --transition-duration: 0.2s;
+
+    --header-top-height: 61px;
+
+    --header-bottom-content: 45px;
+
+
+}
